@@ -1,0 +1,41 @@
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heading {
+  font-size: 50px;
+  align-self: center;
+}
+
+.sketch {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.row:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.item {
+  flex: 1;
+  border-right: 1px solid black;
+}
