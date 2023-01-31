@@ -20,3 +20,9 @@ function resizeGrid(n) {
 }
 
 resizeGrid(16);
+
+
+document.querySelector(".resize-button").addEventListener("click", () => {
+  const newSize = Number(prompt("Please enter new size for sketch:"));
+  resizeGrid(newSize);
+});
