@@ -17,12 +17,16 @@ function resizeGrid(n) {
 
     sketch.appendChild(row)
   }
+
+  document.querySelector(".resize-button").addEventListener("click", () => {
+    const newSize = Number(prompt("Please enter new size for sketch:"));
+    resizeGrid(newSize);
+  });
+  
+  document.querySelectorAll(".item").forEach((item) => {
+    item.addEventListener("mouseover", () => item.classList.add("painted"));
+  });
 }
 
+
 resizeGrid(16);
-
-
-document.querySelector(".resize-button").addEventListener("click", () => {
-  const newSize = Number(prompt("Please enter new size for sketch:"));
-  resizeGrid(newSize);
-});

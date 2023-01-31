@@ -45,3 +45,7 @@ body {
   align-self: center;
   padding: 16px;
 }
+
+.painted {
+  background-color: aqua;
+}
